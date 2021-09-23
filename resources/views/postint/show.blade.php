@@ -94,7 +94,7 @@
     </figure>
       @else
       <figure>
-        <img class="w-full h-80 object-cover object-center "src="https://gestionleslie.soutecmexico.com/storage/post/09.jpg" alt="">
+        <img class="w-full h-80 object-cover object-center "src="https://leslie.sftcontrol.com/storage/post/09.jpg" alt="">
     </figure>
       @endif
       

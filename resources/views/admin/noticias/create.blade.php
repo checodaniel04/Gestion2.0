@@ -31,7 +31,7 @@
             <div class="row mb-3">
                 <div class="col">
                     <div class="image-wrapper">
-                        <img id="picture" src="https://gestionleslie.soutecmexico.com/storage/post/09.jpg" alt="">
+                        <img id="picture" src="https://leslie.sftcontrol.com.com/storage/post/09.jpg" alt="">
                     </div>
                 
                 </div>
