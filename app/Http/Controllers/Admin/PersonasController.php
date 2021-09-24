@@ -63,7 +63,7 @@ class PersonasController extends Controller
 
         $entrada=$request->all();
         if ($request->file('file')) {
-            $url = Storage::put('imgcr', $request->file('file'));
+            $url = Storage::put('postcr', $request->file('file'));
             $entrada['url']=$url ;      
          
         }
