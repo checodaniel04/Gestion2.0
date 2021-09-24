@@ -118,13 +118,22 @@
            
         </div>
     </div> 
-    <div class="form-group">
+    <div class="row mb-3">
+        <div class="col">
+            <div class="image-wrapper">
+                <img id="picture" src="https://leslie.sftcontrol.com/storage/post/09.jpg" alt="">
+            </div>
+        
+        </div>
+        <div class="col">
         {!! Form::label('file', 'Foto Credencial de Elector') !!}
-    {!! Form::file('file', ['class'=>'form-control-file', 'accept' => 'image/*']) !!} 
-    @error('file')
-    <span class="text-danger">{{$message}}</span>
-     @enderror
+        {!! Form::file('file', ['class'=>'form-control-file', 'accept' => 'image/*']) !!}
+        </div>
     </div>
+    @error('file')
+        <span class="text-danger">{{$message}}</span>
+    @enderror
+
     
         {!! Form::submit('Crear Promovido', ['class'=>'btn btn-primary']) !!}
     
