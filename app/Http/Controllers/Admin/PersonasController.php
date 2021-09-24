@@ -67,14 +67,7 @@ class PersonasController extends Controller
             $entrada['url']=$url ;      
          
         }
-        //return $entrada;
-        
-         
-        
-       
-      
-        
-
+     
         persona::create($entrada);
         return redirect()->route('admin.personas.index');
         
