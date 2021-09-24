@@ -119,7 +119,7 @@
         </div>
     </div> 
     <div class="form-group">
-        {!! Form::label('foto_d', 'Foto Credencial de Elector') !!}
+        {!! Form::label('file', 'Foto Credencial de Elector') !!}
     {!! Form::file('file', ['class'=>'form-control-file', 'accept' => 'image/*']) !!} 
     @error('file')
     <span class="text-danger">{{$message}}</span>

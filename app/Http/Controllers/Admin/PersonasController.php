@@ -59,13 +59,15 @@ class PersonasController extends Controller
             'file'=>'image' 
                     
         ]);
+       
+        
         $entrada=$request->all();
-        if ($archivo=$request->file('file')) {
-            $nombre=$archivo->getClientOriginalName();
-            $archivo->move('vendor\adminlte\dist\imgcr', $nombre);
-            $entrada['fcredencial']=$nombre ;      
+        if ($request->file('file')) {
+            $url = Storage::put('imgcr', $request->file('file'));
+            $entrada['url']=$url ;      
          
         }
+      
         
 
         persona::create($entrada);
