@@ -63,15 +63,15 @@ class PersonasController extends Controller
         
         $entrada=$request->all();
         if ($request->file('file')) {
-            $url = Storage::put('imgcr', $request->file('file'));
-            $entrada['url']=$url ;      
+            $fcredencial = Storage::put('imgcr', $request->file('file'));
+            $entrada['fcredencial']=$fcredencial ;      
          
         }
       
-        return $personas->all();
+        
 
-        //persona::create($entrada);
-        //return redirect()->route('admin.personas.index');
+        persona::create($entrada);
+        return redirect()->route('admin.personas.index');
         
     }
 
