@@ -31,7 +31,7 @@
                    <tr><th>Vigencia</th><td>{{$persona->vigencia}}</td></tr>
                    <tr><th>Fecha de Nacimiento</th><td>{{$persona->fnacimiento}}</td></tr>
                    <tr><th>Quien dio de Alta</th><td>{{$persona->users_id}}</td></tr>
-                   <tr><th>Credencial</th><td><img src="\vendor\adminlte\dist\imgcr\{{$persona->fcredencial}}" width="150"></td></tr>
+                   <tr><th>Credencial</th><td><img src="{{Storage::url($persona->fcredencial)}}" width="150"></td></tr>
                    <tr><th>Fecha de Alta</th><td>{{$persona->created_at}}</td></tr>                                  
 
                 </tbody>
