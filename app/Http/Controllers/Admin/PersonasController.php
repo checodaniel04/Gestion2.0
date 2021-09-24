@@ -68,10 +68,10 @@ class PersonasController extends Controller
          
         }
       
-        
+        return $personas->all();
 
-        persona::create($entrada);
-return redirect()->route('admin.personas.index');
+        //persona::create($entrada);
+        //return redirect()->route('admin.personas.index');
         
     }
 
