@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\persona;
+use Illuminate\Support\Facades\Storage;
 
 class PersonasController extends Controller
 {
@@ -65,8 +66,7 @@ class PersonasController extends Controller
         if ($request->file('file')) {
             $url = Storage::put('postcr', $request->file('file'));
             $entrada['url']=$url ;      
-         
-        }
+                 }
      
         persona::create($entrada);
         return redirect()->route('admin.personas.index');
